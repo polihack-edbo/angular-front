@@ -1,0 +1,12 @@
+.background-color {
+  /* The gradient used */
+  background-image: linear-gradient(to bottom, #5368cf, #5f64cc, #6a60c9, #755cc6, #7e57c2);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
