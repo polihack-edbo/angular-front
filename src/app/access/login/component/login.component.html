@@ -1,3 +1,58 @@
-<p>
-  login works!
-</p>
+<div class="card white-opacity-4">
+  <div class="card-content white-text left-align">
+    <div class="row row-login">
+      <div class="col s12 m7">
+        <h3 class="card-title center">Iniciar Sesión</h3>
+        <p>
+          Hola de nuevo, sabemos que el camino puede ser largo, pero recuerda que esta plataforma es para ti,
+          siempre ayudandote a crecer...
+        </p>
+        <hr>
+        <div class="hide-on-small-only">
+          <div class="row">
+            <div class="col m10 offset-m1">
+              <blockquote>
+                <p>
+                  <i>"Sólo se puede vivir una vez. Y no quiero perder ni un minuto de mi vida”</i>
+                </p>
+                <p>
+                  <b>Richard Branson</b>
+                </p>
+              </blockquote>
+              <blockquote>
+                <p>
+                  <i>“A alguna gente no le gusta el cambio, pero necesitas abrazarlo si la alternativa es el desastre”</i>
+                </p>
+                <p>
+                  <b>Elon Musk</b>
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m5 l5">
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+          <div class="input-field">
+            <h6>Pon tu Correo</h6>
+            <input placeholder="contacto@ejemplo.com" id="first_name" type="email" class="validate"
+                   name="email" ngModel required >
+          </div>
+          <div class="input-field">
+            <h6>Y aquí tu contraseña</h6>
+            <input placeholder="********" id="last_name" type="password" class="validate"
+                   name="password" ngModel required >
+          </div>
+          <div class="input-field center-align">
+            <button class="btn btn-submit" [disabled]="f.invalid" routerLink="/app/"> Ingresar </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="card-action white-opacity-8">
+    <p>Recuerda, que si <b>no tienes una cuenta te puedes registrar</b></p>
+    <a routerLink="/access/register/select" [ngClass]="'btn btn-flat white-text'">Registrar</a>
+  </div>
+</div>
+

@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PlatformComponent } from './component/platform.component';
+import {PlatformRoutingModule} from './platform-routing.module';
 
 @NgModule({
-  declarations: [],
+  declarations: [PlatformComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    PlatformRoutingModule
   ]
 })
 export class PlatformModule { }

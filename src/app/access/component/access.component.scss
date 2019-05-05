@@ -3,7 +3,7 @@
   background-image: linear-gradient(to bottom, #4f7fd1, #637dd2, #757bd1, #8678d0, #9575cd);
 
   /* Full height */
-  height: 100%;
+  min-height: 100%;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -12,4 +12,9 @@
 
   /* color text */
   color: var(--color-white);
+}
+
+
+@media only screen and (max-width: 600px) {
+  .background-color { min-height: 106%;  }
 }

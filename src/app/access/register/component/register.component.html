@@ -1,3 +1,13 @@
-<p>
-  register works!
-</p>
+<div class="card white-opacity-4">
+  <div class="card-content white-text left-align">
+    <div class="row row-login">
+      <div class="col s12 center">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+  <div class="card-action white-opacity-8">
+    <p>¿Ya tienes cuenta?<b> Vamos a iniciar sesión</b></p>
+    <a [routerLink]="['/access', 'login']" [ngClass]="'btn btn-flat white-text'">Iniciar sesión</a>
+  </div>
+</div>

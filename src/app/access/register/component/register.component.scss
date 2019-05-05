@@ -1,0 +1,53 @@
+.card {
+  margin-top: 10%;
+}
+
+.white-opacity-4{
+  background-color: rgba(230,230,230 ,0.4);
+}
+
+.white-opacity-8{
+  background-color: rgba(230,230,230 , 0.4);
+  color: var(--color-black);
+}
+
+.input-field>.btn{
+  margin-bottom: 0;
+}
+
+hr, blockquote {
+  margin: 4% 0;
+  border-color: rgba(66,165,245 ,1);
+}
+
+blockquote {
+  padding: 2%;
+}
+
+.m5 {
+  margin-top: 5%;
+}
+
+.l5 {
+  margin-top: 8%;
+}
+
+.btn-flat {
+  border: 1px solid var(--color-white);
+  color: rgba(66,165,245 ,1);
+}
+
+.btn-flat:hover {
+  background-color: rgba(66,165,245 ,1);
+  color: var(--color-white);
+}
+
+
+.btn-submit {
+  background-image: linear-gradient(to bottom, #42a5f5, #33adf8, #23b4fa, #11bbfb, #00c2fb);
+}
+
+@media only screen and (max-width: 600px) {
+  .row-login { margin-bottom: 0; }
+  .card { margin-top: 10%; }
+}

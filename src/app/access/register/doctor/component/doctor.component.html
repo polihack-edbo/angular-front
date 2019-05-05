@@ -1,0 +1,80 @@
+<h6>Gracias, por querer apoyar a personas en una situación delicada. Te pedimos llenes el formulario, y con gusto ayudes
+a tu próximo paciente</h6>
+<hr>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <div class="row left-align">
+    <div class="col s10 offset-s1">
+      <div class="row">
+        <div class="container-form">
+          <div class="col s12 m4">
+            Tú nombre:
+            <div class="input-field inline">
+              <input placeholder="Nombre" id="first_name" type="text" class="validate"
+                     name="first_name" ngModel required>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            Tú Apellido:
+            <div class="input-field inline">
+              <input placeholder="Apellido" id="last_name" type="text" class="validate" name="last_name" ngModel required>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            Usuario:
+            <div class="input-field inline">
+              <input placeholder="Usuario" id="username" type="text" class="validate" name="username" ngModel required>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            Correo:
+            <div class="input-field inline">
+              <input placeholder="ejemplo@contacto.com" id="email" type="email" class="validate" name="email" ngModel required>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            Contraseña:
+            <div class="input-field inline">
+              <input placeholder="Contraseña" id="password" type="password" class="validate" name="password"
+                     [minLength]="5" ngModel required>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            Fecha de Nacimiento:
+            <div class="input-field inline">
+              <input placeholder="Fecha de Nacimiento" type="text" class="datepicker black-text" name="birthday"
+                     ngModel #datepicker>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            Región:
+            <div class="input-field inline">
+              <input placeholder="Región" id="region" type="text" class="validate" name="region"  ngModel required>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            Estudios:
+            <div class="input-field inline">
+              <input placeholder="Estudios" id="educational_level" type="text" class="validate" name="educational_level" ngModel required>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            Cédula
+            <div class="input-field inline">
+              <input placeholder="Cédula profesional" id="contact" type="text" class="validate" name="professional_license" ngModel required="">
+            </div>
+          </div>
+          <div class="input-field col s12">
+            <textarea placeholder="Información personal" id="textarea1" class="materialize-textarea"
+                      name="description" ngModel required></textarea>
+          </div>
+          <div class="col s12">
+            <div class="input-field center-align">
+              <button type="submit" class="btn btn-submit" [disabled]="f.invalid"> Ingresar </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+<a class="btn btn-return" routerLink="/access/register/select">Regresar</a>

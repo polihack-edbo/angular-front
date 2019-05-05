@@ -11,3 +11,11 @@
 body, html {
   height: 100%;
 }
+
+.btn {
+  transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
+}
+
+.datepicker-calendar {
+  color: black !important;
+}
