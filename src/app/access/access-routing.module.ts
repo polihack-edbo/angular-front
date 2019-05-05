@@ -6,6 +6,11 @@ const routes: Routes = [
   {
     path: '',
     component: AccessComponent,
+    children: [
+      { path: 'login', loadChildren: './login/login.module#LoginModule'},
+      { path: 'register', loadChildren: './register/register.module#RegisterModule'},
+      { path: '', pathMatch: 'full', redirectTo: 'login' }
+    ]
   },
 ];
 

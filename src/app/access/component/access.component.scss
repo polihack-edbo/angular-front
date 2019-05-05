@@ -1,6 +1,6 @@
 .background-color {
   /* The gradient used */
-  background-image: linear-gradient(to bottom, #5368cf, #5f64cc, #6a60c9, #755cc6, #7e57c2);
+  background-image: linear-gradient(to bottom, #4f7fd1, #637dd2, #757bd1, #8678d0, #9575cd);
 
   /* Full height */
   height: 100%;
@@ -9,4 +9,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  /* color text */
+  color: var(--color-white);
 }
